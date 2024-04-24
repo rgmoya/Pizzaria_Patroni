@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Patroni</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+
+    <!-- Logo da pizzaria-->
+    <img src="/imagens/logo.png">
+
+
+
+
+</head>
+
+<body>
+    <section class="form-principal">
+        <div>
+
+            <h1>Agradecemos a Preferência!!!</h1>
+            <form class="form-container" id="mainform">
+
+                <!-- label 1 Valor todal da conta-->
+                <div class="input-container">
+                    <label for="Valor Total da Conta:">Valor Total da Conta:</label>
+                    <input class="input-element" type="number" id="val_total" name="val_total" placeholder="R$" />
+                </div>
+                <!-- label 2 Qtidade de pessoasl-->
+                <div class="input-container">
+                    <label for="Nº pessoas na mesa:">Nº Pessoas Pagantes:</label>
+                    <input class="input-element" type="number" id="pessoas_mesa" name="pessoas_mesa" placeholder="00" />
+                </div>
+
+                <!-- label 3 Forma de pagamento-->
+                <div class="input-container">
+                    <label for="Forma de Pagamento:">Forma de Pagamento</label>
+                    <input class="input-element" type="text" id="forma_pag" name="forma_pag" placeholder="Selecione" />
+                </div>
+
+                <!-- label 4 Gorjeta?? -->
+
+                <!-- 
+                <div class="input-gorjeta">
+                    <label for="Adicionar Gorjeta?">Adicionar Gorjeta?&nbsp;&nbsp;&nbsp;</label>
+                    <input class="input-element" type="checkbox" id="add_gorjeta" name="add_gorjeta" />
+                    &nbsp;&nbsp;&nbsp;10% de Valor.
+                </div>
+                -->
+
+
+
+                <div class="input-gorjeta">
+                    <label for="Adicionar Gorjeta?">Adicionar 10% de Gorjeta?</label>
+                    <input type="radio" id="comgorjeta" name="selecaogorjeta" value="sim" checked>
+                    <label for="soma">Sim</label>
+                    <input type="radio" id="semgorjeta" name="selecaogorjeta" value="nao">
+                    <label for="subtracao">Não</label>
+                </div>
+
+
+
+
+
+
+                <!-- label button -->
+                <div>
+                    <button type="submit" class="button">CALCULAR
+                </div>
+
+                </button>
+
+
+
+            </form>
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
